@@ -1,0 +1,46 @@
+quantum-os/
+│
+├── src/
+│   ├── core/
+│   │   ├── init/
+│   │   │   └── initialize.c
+│   │   ├── kernel/
+│   │   │   └── kernel.c
+│   │   ├── scheduler/
+│   │   │   └── scheduler.c
+│   │   ├── qlm/
+│   │   │   └── quantum_ops.qlm
+│   │   └── main.c
+│   ├── drivers/
+│   │   └── driver.c
+│   ├── services/
+│   │   └── service_manager.c
+│   └── ui/
+│       └── ui_manager.c
+│
+├── docs/
+│   ├── api/
+│   ├── guides/
+│   └── tutorials/
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+│
+├── scripts/
+│   ├── build/
+│   ├── deploy/
+│   └── utilities/
+│
+├── assets/
+│   ├── images/
+│   └── styles/
+│
+├── examples/
+│   └── sample-apps/
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── quantum-os.config.json
