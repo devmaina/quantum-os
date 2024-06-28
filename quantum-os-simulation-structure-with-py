@@ -1,0 +1,46 @@
+quantum-os/
+│
+├── src/
+│   ├── core/
+│   │   ├── init/
+│   │   │   └── initialize.py
+│   │   ├── kernel/
+│   │   │   └── kernel.py
+│   │   ├── scheduler/
+│   │   │   └── scheduler.py
+│   │   └── main.py
+│   ├── drivers/
+│   │   └── driver.py
+│   ├── quantum/
+│   │   └── quantum_state.py
+│   ├── services/
+│   │   └── service_manager.py
+│   └── ui/
+│       └── ui_manager.py
+│
+├── docs/
+│   ├── api/
+│   ├── guides/
+│   └── tutorials/
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+│
+├── scripts/
+│   ├── build/
+│   ├── deploy/
+│   └── utilities/
+│
+├── assets/
+│   ├── images/
+│   └── styles/
+│
+├── examples/
+│   └── sample-apps/
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── quantum-os.config.json
