@@ -1,0 +1,71 @@
+// src/core/main.qpl
+
+// Import necessary modules
+import "core/init/initialize.qpl"
+import "core/scheduler/scheduler.qpl"
+import "services/service_manager.qpl"
+import "ui/ui_manager.qpl"
+
+// Main function
+function main() {
+    // Initialize the system
+    initializeSystem()
+    
+    // Start the quantum scheduler
+    startScheduler()
+    
+    // Start core services
+    startServices()
+    
+    // Initialize the user interface
+    initializeUI()
+    
+    // Enter main event loop
+    runEventLoop()
+}
+
+// Function to initialize the system
+function initializeSystem() {
+    println("Initializing Quantum OS...")
+    initializeQuantumState()
+    initializeDrivers()
+    println("Initialization complete.")
+}
+
+// Function to start the quantum scheduler
+function startScheduler() {
+    println("Starting Scheduler...")
+    scheduler.start()
+    println("Scheduler running.")
+}
+
+// Function to start core services
+function startServices() {
+    println("Starting Core Services...")
+    service_manager.startAll()
+    println("Core Services running.")
+}
+
+// Function to initialize the user interface
+function initializeUI() {
+    println("Initializing User Interface...")
+    ui_manager.init()
+    println("User Interface ready.")
+}
+
+// Function to run the main event loop
+function runEventLoop() {
+    println("Entering Main Event Loop...")
+    while (true) {
+        handleEvents()
+    }
+}
+
+// Function to handle events
+function handleEvents() {
+    // Placeholder for event handling logic
+    println("Handling events...")
+}
+
+// Start the main function
+main()
